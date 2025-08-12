@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# C++
+*.exe
+*.out
+
+# Java
+*.class
+
+# VS Code
+.vscode/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
