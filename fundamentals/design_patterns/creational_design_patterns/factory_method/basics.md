@@ -1,5 +1,4 @@
 # Factory Method Design Pattern  
-_Last Updated : 23 Jul, 2025_
 
 ---
 
