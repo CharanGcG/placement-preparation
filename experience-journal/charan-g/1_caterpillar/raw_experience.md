@@ -27,4 +27,3 @@ It consisted of two easy level questions.
 ## Timeline & Status
 
 The rounds took two days, each starting at 6pm.  
-I am
