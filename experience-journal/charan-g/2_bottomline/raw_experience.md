@@ -1,5 +1,7 @@
 # Bottomline Online Assessment Experience
 
+**Date:** 18/8/25
+
 ---
 
 The online assessment consisted of **35 MCQs** and **2 coding questions**.  
