@@ -53,7 +53,7 @@ We’re asked:
 #### ⚡ Steps
 
 1. Initialize `dp` of same size as grid (or do it in-place).
-2. First row & column: `dp[i][j] = 1` if grid$$i]$$j] = '1'.
+2. First row & column: `dp[i][j] = 1` if grid[i][j] = '1'.
 3. Fill table using recurrence.
 4. Track the maximum side length while filling.
 5. Return area = `max_side^2`.
@@ -141,30 +141,30 @@ right = [0,0,0,0]
 
 ### Pass 1: Build `left` (previous less element counts)
 
-> Rule: while stack top > arr$$i], pop.  
+> Rule: while stack top > arr[i], pop.  
 > Each popped count gets added.
 
 * i=0, arr\=3  
   stack empty → count=1  
   left\=1  
-  stack=$$(3,1)]
+  stack=[(3,1)]
 
 * i=1, arr\=1  
   stack top 3 > 1 → pop (3,1), count=2  
   left\=2  
-  stack=$$(1,2)]
+  stack=[(1,2)]
 
 * i=2, arr\=2  
   stack top 1 > 2? No (1 < 2)  
   count=1  
   left\=1  
-  stack=$$(1,2),(2,1)]
+  stack=[(1,2),(2,1)]
 
 * i=3, arr\=4  
   stack top 2 > 4? No  
   count=1  
   left\=1  
-  stack=$$(1,2),(2,1),(4,1)]
+  stack=[(1,2),(2,1),(4,1)]
 
 Result:
 
@@ -176,29 +176,29 @@ left = [1, 2, 1, 1]
 
 ### Pass 2: Build `right` (next less-or-equal counts)
 
-> Rule: while stack top >= arr$$i], pop.  
+> Rule: while stack top >= arr[i], pop.  
 > Each popped count gets added.
 
 * i=3, arr\=4  
   stack empty → count=1  
   right\=1  
-  stack=$$(4,1)]
+  stack=[(4,1)]
 
 * i=2, arr\=2  
   stack top 4 >= 2 → pop (4,1), count=2  
   right\=2  
-  stack=$$(2,2)]
+  stack=[(2,2)]
 
 * i=1, arr\=1  
   stack top 2 >= 1 → pop (2,2), count=3  
   right\=3  
-  stack=$$(1,3)]
+  stack=[(1,3)]
 
 * i=0, arr\=3  
   stack top 1 >= 3? No (1 < 3)  
   count=1  
   right\=1  
-  stack=$$(1,3),(3,1)]
+  stack=[(1,3),(3,1)]
 
 Result:
 
@@ -230,3 +230,12 @@ Sum = 17
 * `arr[i]` contributes in exactly `left[i] * right[i]` subarrays.
 
 ***
+
+
+
+---
+
+
+## Design question
+
+We needed to design an online food ordering app using oops showing all the four pillars, syntax was not given importance, the content was important
