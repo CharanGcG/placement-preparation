@@ -1,7 +1,3 @@
-Here is a Markdown-formatted README section with MCQ topics and coding questions as requested:
-
-***
-
 ## Multiple Choice Questions (MCQ) Topics
 
 - **Aptitude**
