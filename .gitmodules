@@ -1,0 +1,3 @@
+[submodule "fundamentals/java-love"]
+	path = fundamentals/java-love
+	url = https://github.com/CharanGcG/java-love
